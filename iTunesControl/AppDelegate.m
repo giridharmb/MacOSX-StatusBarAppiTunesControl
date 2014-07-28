@@ -8,7 +8,71 @@
 
 #import "AppDelegate.h"
 
+
 @implementation AppDelegate
+
+- (void) execAppleScript:(NSString *)scriptName {
+    NSLog( @"Script >> %@", scriptName);
+    NSURL *resourceURL = [[NSBundle mainBundle] resourceURL];
+    NSLog( @"resourceURL >> %@", resourceURL);
+    NSURL *urlOfScript = [resourceURL URLByAppendingPathComponent:scriptName];
+    NSLog( @"urlOfScript >> %@", urlOfScript);
+    NSDictionary *errors = [NSDictionary dictionary];
+    NSLog( @"errors >> %@", errors);
+    NSAppleScript *script = [[NSAppleScript alloc] initWithContentsOfURL: urlOfScript error:&errors];
+    NSLog( @"script >> %@", script);
+    [script executeAndReturnError:nil];
+    if(script == NULL)
+    {
+        NSLog( @"could not instantiate script at %@", urlOfScript);
+    }
+}
+
+
+- (void) awakeFromNib {
+    statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
+    
+    [statusItem setMenu:menu];
+    [statusItem setTitle:@""];
+    [statusItem setHighlightMode:YES];
+    [statusItem setImage:[NSImage imageNamed:@"s.png"]];
+ 
+    [self execAppleScript:@"notify.scptd"];
+}
+
+- (IBAction)play:(id)sender {
+    [self execAppleScript:@"play.scptd"];
+    [self execAppleScript:@"notify.scptd"];
+}
+
+- (IBAction)pause:(id)sender {
+    [self execAppleScript:@"pause.scptd"];
+}
+
+- (IBAction)next:(id)sender {
+    [self execAppleScript:@"next.scptd"];
+    [self execAppleScript:@"notify.scptd"];
+}
+
+- (IBAction)previous:(id)sender {
+    [self execAppleScript:@"previous.scptd"];
+    [self execAppleScript:@"notify.scptd"];
+}
+
+- (IBAction)stop:(id)sender {
+    [self execAppleScript:@"stop.scptd"];
+}
+
+- (IBAction)quit:(id)sender {
+    [NSApp terminate:nil];
+}
+
+- (IBAction)showWindow:(id)sender {
+    [NSApp activateIgnoringOtherApps:YES];
+    [_window makeKeyAndOrderFront:nil];
+}
+
+
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {

@@ -18,6 +18,20 @@
 		E33107471983EBCC00FEA527 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E33107261983EBCC00FEA527 /* Cocoa.framework */; };
 		E331074F1983EBCC00FEA527 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E331074D1983EBCC00FEA527 /* InfoPlist.strings */; };
 		E33107511983EBCC00FEA527 /* iTunesControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E33107501983EBCC00FEA527 /* iTunesControlTests.m */; };
+		E3C44D861985FC92002C81A5 /* s.png in Resources */ = {isa = PBXBuildFile; fileRef = E3C44D851985FC92002C81A5 /* s.png */; };
+		E3C44D891985FF79002C81A5 /* DisplayNotification.scptd in Resources */ = {isa = PBXBuildFile; fileRef = E3C44D881985FF79002C81A5 /* DisplayNotification.scptd */; };
+		E3C44D91198634DA002C81A5 /* next.scptd in Resources */ = {isa = PBXBuildFile; fileRef = E3C44D8B198634DA002C81A5 /* next.scptd */; };
+		E3C44D92198634DA002C81A5 /* notify.scptd in Resources */ = {isa = PBXBuildFile; fileRef = E3C44D8C198634DA002C81A5 /* notify.scptd */; };
+		E3C44D93198634DA002C81A5 /* pause.scptd in Resources */ = {isa = PBXBuildFile; fileRef = E3C44D8D198634DA002C81A5 /* pause.scptd */; };
+		E3C44D94198634DA002C81A5 /* play.scptd in Resources */ = {isa = PBXBuildFile; fileRef = E3C44D8E198634DA002C81A5 /* play.scptd */; };
+		E3C44D95198634DA002C81A5 /* previous.scptd in Resources */ = {isa = PBXBuildFile; fileRef = E3C44D8F198634DA002C81A5 /* previous.scptd */; };
+		E3C44D96198634DA002C81A5 /* stop.scptd in Resources */ = {isa = PBXBuildFile; fileRef = E3C44D90198634DA002C81A5 /* stop.scptd */; };
+		E3C44DB51986570B002C81A5 /* i_next.png in Resources */ = {isa = PBXBuildFile; fileRef = E3C44DAF1986570B002C81A5 /* i_next.png */; };
+		E3C44DB61986570B002C81A5 /* i_pause.png in Resources */ = {isa = PBXBuildFile; fileRef = E3C44DB01986570B002C81A5 /* i_pause.png */; };
+		E3C44DB71986570B002C81A5 /* i_play.png in Resources */ = {isa = PBXBuildFile; fileRef = E3C44DB11986570B002C81A5 /* i_play.png */; };
+		E3C44DB81986570B002C81A5 /* i_previous.png in Resources */ = {isa = PBXBuildFile; fileRef = E3C44DB21986570B002C81A5 /* i_previous.png */; };
+		E3C44DB91986570B002C81A5 /* i_quit.png in Resources */ = {isa = PBXBuildFile; fileRef = E3C44DB31986570B002C81A5 /* i_quit.png */; };
+		E3C44DBA1986570B002C81A5 /* i_stop.png in Resources */ = {isa = PBXBuildFile; fileRef = E3C44DB41986570B002C81A5 /* i_stop.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +64,21 @@
 		E331074C1983EBCC00FEA527 /* iTunesControlTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iTunesControlTests-Info.plist"; sourceTree = "<group>"; };
 		E331074E1983EBCC00FEA527 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E33107501983EBCC00FEA527 /* iTunesControlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iTunesControlTests.m; sourceTree = "<group>"; };
+		E3C44D851985FC92002C81A5 /* s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = s.png; sourceTree = "<group>"; };
+		E3C44D881985FF79002C81A5 /* DisplayNotification.scptd */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DisplayNotification.scptd; sourceTree = "<group>"; };
+		E3C44D8A1986000A002C81A5 /* DisplayNotification.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = DisplayNotification.scpt; sourceTree = "<group>"; };
+		E3C44D8B198634DA002C81A5 /* next.scptd */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = next.scptd; sourceTree = "<group>"; };
+		E3C44D8C198634DA002C81A5 /* notify.scptd */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = notify.scptd; sourceTree = "<group>"; };
+		E3C44D8D198634DA002C81A5 /* pause.scptd */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = pause.scptd; sourceTree = "<group>"; };
+		E3C44D8E198634DA002C81A5 /* play.scptd */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = play.scptd; sourceTree = "<group>"; };
+		E3C44D8F198634DA002C81A5 /* previous.scptd */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = previous.scptd; sourceTree = "<group>"; };
+		E3C44D90198634DA002C81A5 /* stop.scptd */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = stop.scptd; sourceTree = "<group>"; };
+		E3C44DAF1986570B002C81A5 /* i_next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = i_next.png; sourceTree = "<group>"; };
+		E3C44DB01986570B002C81A5 /* i_pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = i_pause.png; sourceTree = "<group>"; };
+		E3C44DB11986570B002C81A5 /* i_play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = i_play.png; sourceTree = "<group>"; };
+		E3C44DB21986570B002C81A5 /* i_previous.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = i_previous.png; sourceTree = "<group>"; };
+		E3C44DB31986570B002C81A5 /* i_quit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = i_quit.png; sourceTree = "<group>"; };
+		E3C44DB41986570B002C81A5 /* i_stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = i_stop.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,9 +156,24 @@
 		E331072D1983EBCC00FEA527 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E3C44DAF1986570B002C81A5 /* i_next.png */,
+				E3C44DB01986570B002C81A5 /* i_pause.png */,
+				E3C44DB11986570B002C81A5 /* i_play.png */,
+				E3C44DB21986570B002C81A5 /* i_previous.png */,
+				E3C44DB31986570B002C81A5 /* i_quit.png */,
+				E3C44DB41986570B002C81A5 /* i_stop.png */,
+				E3C44D8B198634DA002C81A5 /* next.scptd */,
+				E3C44D8C198634DA002C81A5 /* notify.scptd */,
+				E3C44D8D198634DA002C81A5 /* pause.scptd */,
+				E3C44D8E198634DA002C81A5 /* play.scptd */,
+				E3C44D8F198634DA002C81A5 /* previous.scptd */,
+				E3C44D90198634DA002C81A5 /* stop.scptd */,
 				E331072E1983EBCC00FEA527 /* iTunesControl-Info.plist */,
+				E3C44D881985FF79002C81A5 /* DisplayNotification.scptd */,
 				E331072F1983EBCC00FEA527 /* InfoPlist.strings */,
+				E3C44D851985FC92002C81A5 /* s.png */,
 				E33107321983EBCC00FEA527 /* main.m */,
+				E3C44D8A1986000A002C81A5 /* DisplayNotification.scpt */,
 				E33107341983EBCC00FEA527 /* iTunesControl-Prefix.pch */,
 				E33107351983EBCC00FEA527 /* Credits.rtf */,
 			);
@@ -231,9 +275,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				E33107311983EBCC00FEA527 /* InfoPlist.strings in Resources */,
+				E3C44D92198634DA002C81A5 /* notify.scptd in Resources */,
+				E3C44D91198634DA002C81A5 /* next.scptd in Resources */,
+				E3C44D93198634DA002C81A5 /* pause.scptd in Resources */,
+				E3C44D96198634DA002C81A5 /* stop.scptd in Resources */,
 				E331073F1983EBCC00FEA527 /* Images.xcassets in Resources */,
+				E3C44DB81986570B002C81A5 /* i_previous.png in Resources */,
+				E3C44D95198634DA002C81A5 /* previous.scptd in Resources */,
+				E3C44DB51986570B002C81A5 /* i_next.png in Resources */,
+				E3C44D861985FC92002C81A5 /* s.png in Resources */,
+				E3C44D94198634DA002C81A5 /* play.scptd in Resources */,
+				E3C44DB61986570B002C81A5 /* i_pause.png in Resources */,
 				E33107371983EBCC00FEA527 /* Credits.rtf in Resources */,
+				E3C44DBA1986570B002C81A5 /* i_stop.png in Resources */,
+				E3C44D891985FF79002C81A5 /* DisplayNotification.scptd in Resources */,
+				E3C44DB91986570B002C81A5 /* i_quit.png in Resources */,
 				E331073D1983EBCC00FEA527 /* MainMenu.xib in Resources */,
+				E3C44DB71986570B002C81A5 /* i_play.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +524,7 @@
 				E33107561983EBCC00FEA527 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E33107571983EBCC00FEA527 /* Build configuration list for PBXNativeTarget "iTunesControlTests" */ = {
 			isa = XCConfigurationList;
@@ -474,6 +533,7 @@
 				E33107591983EBCC00FEA527 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
