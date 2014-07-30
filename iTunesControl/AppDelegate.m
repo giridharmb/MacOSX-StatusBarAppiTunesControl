@@ -36,13 +36,12 @@
     [statusItem setTitle:@""];
     [statusItem setHighlightMode:YES];
     [statusItem setImage:[NSImage imageNamed:@"s.png"]];
- 
-    [self execAppleScript:@"notify.scptd"];
+
+
 }
 
 - (IBAction)play:(id)sender {
     [self execAppleScript:@"play.scptd"];
-    [self execAppleScript:@"notify.scptd"];
 }
 
 - (IBAction)pause:(id)sender {
@@ -51,12 +50,11 @@
 
 - (IBAction)next:(id)sender {
     [self execAppleScript:@"next.scptd"];
-    [self execAppleScript:@"notify.scptd"];
+
 }
 
 - (IBAction)previous:(id)sender {
     [self execAppleScript:@"previous.scptd"];
-    [self execAppleScript:@"notify.scptd"];
 }
 
 - (IBAction)stop:(id)sender {
@@ -66,10 +64,17 @@
 - (IBAction)quit:(id)sender {
     [NSApp terminate:nil];
 }
+- (IBAction)info:(id)sender {
+    // [NSApp activateIgnoringOtherApps:YES];
+    // [_window makeKeyAndOrderFront:nil];
+    
+    [self execAppleScript:@"notify.scptd"];
+}
+
 
 - (IBAction)showWindow:(id)sender {
-    [NSApp activateIgnoringOtherApps:YES];
-    [_window makeKeyAndOrderFront:nil];
+
+
 }
 
 
